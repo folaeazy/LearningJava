@@ -1,8 +1,8 @@
 // My first java code written 02-01-2025;
 
+import math.MethodOverloading;
 
-
-public class Hello
+public class Main
 
 {
     //static final int age; /// final keyword serves as constant in java
@@ -31,39 +31,13 @@ public class Hello
         //double result = obj.sum(2.0,5.0);
         String result = obj.sum("John", "Raymond");
         System.out.println("Printing out result ......." + result);
+        // inheritance with method overloading
+        System.out.println(obj.division(10,2));
         
 
         
     }
 }
-
-class LocalVariable
-{
-    public int test(byte a, byte b){
-        int result = a + b ;
-        return result;
-    }
-}
-
-//method overloading in java
-class MethodOverloading 
-{
-     int sum(int a, int b)
-     {
-        return a + b;
-     }
-
-     double sum(double a , double b)
-     {
-        return a * b;
-     }
-
-     String sum(String firstname, String lastname)
-     {
-        return firstname + " " + lastname;
-     }
-}
-
 
 
 
