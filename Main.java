@@ -25,14 +25,17 @@ public class Main
         
        // LocalVariable obj = new LocalVariable();
         byte a = 5 , b = 4;
-       //int result = obj.test(a,b);
-        MethodOverloading obj = new MethodOverloading();
+       ////int result = obj.test(a,b);
+        //MethodOverloading obj = new MethodOverloading();
         //int result = obj.sum(2,5);
         //double result = obj.sum(2.0,5.0);
-        String result = obj.sum("John", "Raymond");
-        System.out.println("Printing out result ......." + result);
+        //String result = obj.sum("John", "Raymond");
+        //System.out.println("Printing out result ......." + result);
         // inheritance with method overloading
-        System.out.println(obj.division(10,2));
+        //System.out.println(obj.division(10,2));
+
+        StringsDemo obj = new StringsDemo();
+        System.out.println("anonymous object creating...."+ obj.num);
         
 
         
