@@ -1,6 +1,9 @@
 // My first java code written 02-01-2025;
 
 import math.MethodOverloading;
+import abstracts.Brand;
+import interfaces.Drive;
+import interfaces.DriveACar;
 
 public class Main
 
@@ -36,6 +39,19 @@ public class Main
 
         StringsDemo obj = new StringsDemo();
         System.out.println("anonymous object creating...."+ obj.num);
+
+        //practising abstract class
+
+        // Brand car = new Brand();
+        // car.startEngine();
+        // car.electric();
+
+
+        //practicing interface
+
+        Drive car =  new DriveACar();
+        car.stop();
+
         
 
         
