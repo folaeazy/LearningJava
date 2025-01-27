@@ -9,14 +9,18 @@ public class Main
 
 {
     //static final int age; /// final keyword serves as constant in java
-    static int age;
+    int age;
 
-     static int variables(){
-        age = 10;
-        String name = "Raymond";
-        System.out.println("Printing out " + name  + " age ......." + age);
-        return age;
+    static void display(Integer x) 
+    {
+        System.out.println("first interger......." + x );
     }
+    
+    static void display(int x) 
+    {
+        System.out.println("second int......." + x );
+    }
+   
     
    
     public static void main(String[] args)
@@ -37,8 +41,8 @@ public class Main
         // inheritance with method overloading
         //System.out.println(obj.division(10,2));
 
-        StringsDemo obj = new StringsDemo();
-        System.out.println("anonymous object creating...."+ obj.num);
+        //StringsDemo obj = new StringsDemo();
+        //System.out.println("anonymous object creating...."+ obj.num);
 
         //practising abstract class
 
@@ -49,10 +53,17 @@ public class Main
 
         //practicing interface
 
-        Drive car =  new DriveACar();
-        car.stop();
+       // Drive car =  new DriveACar();
+        //car.stop();
 
-        
+    // Child children = new Child();
+    // children.variables();
+
+
+    display(10);
+
+
+    
 
         
     }
@@ -60,3 +71,24 @@ public class Main
 
 
 
+class Parent 
+{
+    static int variables()
+    {
+        int age = 10;
+        String name = "Raymond";
+        System.out.println("Printing out " + name  + " age ......." + age);
+        return age;
+    }
+    
+}
+
+
+class Child extends Parent
+{
+    static int variables()
+    {
+        System.out.println("Incoming from  Practis.....");
+        return 0;
+    }
+}
