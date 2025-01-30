@@ -5,6 +5,15 @@ import abstracts.Brand;
 import interfaces.Drive;
 import interfaces.DriveACar;
 
+
+
+//functional interface and lambda expression 
+
+//@FunctionalInterface
+interface Testing
+{
+    int test(int i);
+}
 public class Main
 
 {
@@ -29,10 +38,25 @@ public class Main
         //Hello obj = new Hello();
         
         System.out.println("Hello from java");
+
+
+        // functional interface style 
+        // Testing testobj = new Testing()
+        // {
+        //     public void test()
+        //     {
+        //         System.out.println("functional programming");
+        //     }
+        // };
+
+        //lambda expression style
+        Testing testobj = (int i) ->  i;
+
+        System.out.println(testobj.test(5));
         
        // LocalVariable obj = new LocalVariable();
         byte a = 5 , b = 4;
-       ////int result = obj.test(a,b);
+       //int result = obj.test(a,b);
         //MethodOverloading obj = new MethodOverloading();
         //int result = obj.sum(2,5);
         //double result = obj.sum(2.0,5.0);
@@ -53,42 +77,38 @@ public class Main
 
         //practicing interface
 
-       // Drive car =  new DriveACar();
-        //car.stop();
+        DriveACar car =  new DriveACar();
+        car.automatic();
 
     // Child children = new Child();
     // children.variables();
 
 
-    display(10);
+    //display(10);
+     
+    }
+}
 
 
+
+// class Parent 
+// {
+//     static int variables()
+//     {
+//         int age = 10;
+//         String name = "Raymond";
+//         System.out.println("Printing out " + name  + " age ......." + age);
+//         return age;
+//     }
     
-
-        
-    }
-}
+// }
 
 
-
-class Parent 
-{
-    static int variables()
-    {
-        int age = 10;
-        String name = "Raymond";
-        System.out.println("Printing out " + name  + " age ......." + age);
-        return age;
-    }
-    
-}
-
-
-class Child extends Parent
-{
-    static int variables()
-    {
-        System.out.println("Incoming from  Practis.....");
-        return 0;
-    }
-}
+// class Child extends Parent
+// {
+//     static int variables()
+//     {
+//         System.out.println("Incoming from  Practise.....");
+//         return 0;
+//     }
+// }
