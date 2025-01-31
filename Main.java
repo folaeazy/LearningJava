@@ -4,58 +4,75 @@ import math.MethodOverloading;
 import abstracts.Brand;
 import interfaces.Drive;
 import interfaces.DriveACar;
+import leetcode.Leetcode;
+
+
+public class Main
+{
+    public static void main(String args[])
+    {
+        int [] nums = {2,4,11,3};
+        Leetcode sum = new Leetcode();
+        int[] ans  = sum.sumArray(nums, 6);
+        System.out.println(ans[0] + " " + ans[1]);
+    }
+}
+
+
+
+
 
 
 
 //functional interface and lambda expression 
 
-//@FunctionalInterface
-interface Testing
-{
-    int test(int i);
-}
-public class Main
+// @FunctionalInterface
+// interface Testing
+// {
+//     int test(int i);
+// }
+// public class Main
 
-{
-    //static final int age; /// final keyword serves as constant in java
-    int age;
+// {
+//     //static final int age; /// final keyword serves as constant in java
+//     int age;
 
-    static void display(Integer x) 
-    {
-        System.out.println("first interger......." + x );
-    }
+//     static void display(Integer x) 
+//     {
+//         System.out.println("first interger......." + x );
+//     }
     
-    static void display(int x) 
-    {
-        System.out.println("second int......." + x );
-    }
+//     static void display(int x) 
+//     {
+//         System.out.println("second int......." + x );
+//     }
    
     
    
-    public static void main(String[] args)
-    {
-        //variables(); //only static method can be called this way without the instance of a class.
-        //Hello obj = new Hello();
+//     public static void main(String[] args)
+//     {
+//         //variables(); //only static method can be called this way without the instance of a class.
+//         //Hello obj = new Hello();
         
-        System.out.println("Hello from java");
+//         System.out.println("Hello from java");
 
 
-        // functional interface style 
-        // Testing testobj = new Testing()
-        // {
-        //     public void test()
-        //     {
-        //         System.out.println("functional programming");
-        //     }
-        // };
+//         // functional interface style 
+//         // Testing testobj = new Testing()
+//         // {
+//         //     public void test()
+//         //     {
+//         //         System.out.println("functional programming");
+//         //     }
+//         // };
 
-        //lambda expression style
-        Testing testobj = (int i) ->  i;
+//         //lambda expression style
+//         Testing testobj = (int i) ->  i;
 
-        System.out.println(testobj.test(5));
+//         System.out.println(testobj.test(5));
         
-       // LocalVariable obj = new LocalVariable();
-        byte a = 5 , b = 4;
+//        // LocalVariable obj = new LocalVariable();
+//         byte a = 5 , b = 4;
        //int result = obj.test(a,b);
         //MethodOverloading obj = new MethodOverloading();
         //int result = obj.sum(2,5);
@@ -77,17 +94,17 @@ public class Main
 
         //practicing interface
 
-        DriveACar car =  new DriveACar();
-        car.automatic();
+//         DriveACar car =  new DriveACar();
+//         car.automatic();
 
-    // Child children = new Child();
-    // children.variables();
+//     // Child children = new Child();
+//     // children.variables();
 
 
-    //display(10);
+//     //display(10);
      
-    }
-}
+//     }
+// }
 
 
 
