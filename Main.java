@@ -24,6 +24,7 @@ public class Main
 
         try {
             CustomException.validateAge(20);
+            
         } catch (Exception e) {
             System.out.println("Excepting" + e);
             
