@@ -1,12 +1,6 @@
-
-
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.*;
+
 
 public class PractiseCollection {
 
@@ -21,14 +15,14 @@ public class PractiseCollection {
 
  //---------------------List--------------//
         //ArrayList
-        ArrayList<String> intergerList = new ArrayList<String>();
-        intergerList.add("apple");
-        intergerList.add("grape");
-        intergerList.add("banana");
-        intergerList.add(2,"egg");
-        boolean empty = intergerList.isEmpty();
-        boolean confirm = intergerList.contains("apple");
-        ListIterator<String> iterators = intergerList.listIterator();
+        // ArrayList<String> intergerList = new ArrayList<String>();
+        // intergerList.add("apple");
+        // intergerList.add("grape");
+        // intergerList.add("banana");
+        // intergerList.add(2,"egg");
+        // boolean empty = intergerList.isEmpty();
+        // boolean confirm = intergerList.contains("apple");
+        // ListIterator<String> iterators = intergerList.listIterator();
 
 
         // for (String a : intergerList)
@@ -41,8 +35,8 @@ public class PractiseCollection {
         //         "\nHashcode: " + intergerList.hashCode() + 
         //         "\nList iterator: "+ iterators);
 
-        Collections.sort(intergerList);
-        System.out.println("Array sorted" + intergerList);
+        // Collections.sort(intergerList);
+        // System.out.println("Array sorted" + intergerList);
 
         // writing to file first
 
@@ -72,26 +66,51 @@ public class PractiseCollection {
 
         //reading from a plaintext file into an object then to arrayList
 
-        ArrayList<String> fileArrayList = new ArrayList<String>();
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("object.txt"))){
-            String eachLine;
-            while((eachLine = bufferedReader.readLine()) != null){
-                fileArrayList.add(eachLine);
-            }
-            printArray(fileArrayList);
+        // ArrayList<String> fileArrayList = new ArrayList<String>();
+        // try (BufferedReader bufferedReader = new BufferedReader(new FileReader("object.txt"))){
+        //     String eachLine;
+        //     while((eachLine = bufferedReader.readLine()) != null){
+        //         String[] eachWord = eachLine.split(" "); //reading each word seperated with space
+        //         for (String word : eachWord){
 
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        //           fileArrayList.add(word);
+        //         }
+        //     }
+        //     printArray(fileArrayList);
+
+        // } catch (Exception e) {
+        //     System.out.println(e);
+        // }
         
 
-        //LinkList
+        //LinkedList
 
-        
+        LinkedList<String> list = new LinkedList<>();
+
+        // list.add("Apple");
+        // list.add("Banana");
+        // list.add("Cherry");
+        // System.out.println(list);
+
+
 
 //----------------------Set------------------//
-        // HashSet
+        // HashSet-------// ignores  duplicate
+
+        HashSet<Integer> sets = new HashSet<>();
+
+        sets.add(1);
+        sets.add(2);
+        sets.add(1);
+        sets.add(2);
+        
+        sets.clear();
+        
+        System.out.println("Sets: " + sets);
+
         // Tree Set
+
+
 
 
         
