@@ -1,7 +1,9 @@
 package interfaces;
 
-public interface Drive
+interface Drive
 {
+    public static final int age = 10;
+    
     void start();
     void stop();
 }

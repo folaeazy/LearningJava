@@ -103,12 +103,14 @@ public class PractiseCollection {
         sets.add(2);
         sets.add(1);
         sets.add(2);
-        
+
         sets.clear();
         
         System.out.println("Sets: " + sets);
 
         // Tree Set
+
+        
 
 
 

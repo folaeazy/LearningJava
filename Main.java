@@ -18,18 +18,22 @@ public class Main
         // int[] ans  = sum.sumArray(nums, 6);
         // System.out.println(ans[0] + " " + ans[1]);
 
-        ExceptionHandling result = new ExceptionHandling();
+        // ExceptionHandling result = new ExceptionHandling();
 
-        System.out.println(result.divisor(0.0));
+        // System.out.println(result.divisor(0.0));
 
-        try {
-            CustomException.validateAge(20);
+        // try {
+        //     CustomException.validateAge(20);
             
-        } catch (Exception e) {
-            System.out.println("Excepting" + e);
+        // } catch (Exception e) {
+        //     System.out.println("Excepting" + e);
             
 
-        }
+        // }
+        Integer a = 128;
+        Integer b = 128;
+        System.out.println(a == b);
+        System.out.println(a.equals(b));
     }
 }
 
