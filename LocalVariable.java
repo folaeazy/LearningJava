@@ -1,7 +1,12 @@
-public class LocalVariable
-{
-    public int test(byte a, byte b){
-        int result = a + b ;
-        return result;
+public  class LocalVariable {
+
+    public static void main(String[] args) {
+        test();
     }
+
+    public static void test() {
+        System.out.println("testing");
+        
+    }
+
 }
